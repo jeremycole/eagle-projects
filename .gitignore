@@ -1,2 +1,17 @@
 .DS_Store
 *.?#?
+*.pro
+*.G2
+*.G3
+*.GBL
+*.GBO
+*.GBS
+*.GTL
+*.GTO
+*.GTP
+*.GTS
+*.TXT
+*.ger
+*.gpi
+*.dri
+*.xln
