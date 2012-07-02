@@ -2510,10 +2510,10 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <part name="YC" library="testpad" deviceset="TP" device="TP20R" value=""/>
 <part name="YB" library="testpad" deviceset="TP" device="TP20R" value=""/>
 <part name="YA" library="testpad" deviceset="TP" device="TP20R" value=""/>
-<part name="IC1" library="atmel" deviceset="ATMEGA644*" device="M"/>
-<part name="JP1" library="jcole" deviceset="USB_MICROB_PLUG" device=""/>
-<part name="IC2" library="jcole" deviceset="FT232R" device="Q"/>
-<part name="U$1" library="jcole" deviceset="DS1337" device="UMAX"/>
+<part name="MCU" library="atmel" deviceset="ATMEGA644*" device="M"/>
+<part name="µUSB" library="jcole" deviceset="USB_MICROB_PLUG" device=""/>
+<part name="USB_SERIAL" library="jcole" deviceset="FT232R" device="Q"/>
+<part name="RTC" library="jcole" deviceset="DS1337" device="UMAX"/>
 <part name="S1" library="jcole" deviceset="SWITCH-SPST" device="MA12R"/>
 <part name="BAT1" library="jcole" deviceset="BATTERY" device="245PTH" value="3V Li-Ion"/>
 <part name="CHLED" library="jcole" deviceset="LED" device="-0402"/>
@@ -2546,7 +2546,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <part name="P+7" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="F1" library="SparkFun" deviceset="PTC" device="0603" value="500mA"/>
-<part name="U2" library="SparkFun" deviceset="MCP73831" device=""/>
+<part name="USB_CHARGER" library="SparkFun" deviceset="MCP73831" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="R10" library="jcole" deviceset="RESISTOR" device="-0603" value="10k"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
@@ -2588,12 +2588,12 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <instance part="YC" gate="G$1" x="35.56" y="124.46" rot="R270"/>
 <instance part="YB" gate="G$1" x="35.56" y="119.38" rot="R270"/>
 <instance part="YA" gate="G$1" x="35.56" y="114.3" rot="R270"/>
-<instance part="IC1" gate="G$1" x="149.86" y="55.88"/>
-<instance part="JP1" gate="G$1" x="99.06" y="149.86"/>
-<instance part="IC2" gate="1" x="33.02" y="50.8"/>
-<instance part="U$1" gate="G$1" x="83.82" y="111.76"/>
-<instance part="S1" gate="1" x="162.56" y="132.08"/>
-<instance part="BAT1" gate="G$1" x="144.78" y="132.08" rot="R180"/>
+<instance part="MCU" gate="G$1" x="149.86" y="55.88"/>
+<instance part="µUSB" gate="G$1" x="99.06" y="149.86"/>
+<instance part="USB_SERIAL" gate="1" x="33.02" y="50.8"/>
+<instance part="RTC" gate="G$1" x="226.06" y="101.6"/>
+<instance part="S1" gate="1" x="233.68" y="124.46"/>
+<instance part="BAT1" gate="G$1" x="215.9" y="124.46" rot="R180"/>
 <instance part="CHLED" gate="G$1" x="182.88" y="157.48"/>
 <instance part="C1" gate="G$1" x="241.3" y="152.4"/>
 <instance part="C2" gate="G$1" x="167.64" y="157.48"/>
@@ -2606,9 +2606,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <instance part="R7" gate="G$1" x="45.72" y="124.46" rot="R180"/>
 <instance part="R8" gate="G$1" x="45.72" y="119.38" rot="R180"/>
 <instance part="R9" gate="G$1" x="45.72" y="114.3" rot="R180"/>
-<instance part="Y1" gate="G$1" x="68.58" y="114.3" rot="R90"/>
+<instance part="Y1" gate="G$1" x="210.82" y="104.14" rot="R90"/>
 <instance part="GND1" gate="1" x="241.3" y="142.24"/>
-<instance part="GND2" gate="1" x="137.16" y="132.08" rot="R270"/>
+<instance part="GND2" gate="1" x="208.28" y="124.46" rot="R270"/>
 <instance part="GND3" gate="1" x="167.64" y="149.86"/>
 <instance part="GND4" gate="1" x="119.38" y="7.62"/>
 <instance part="P+1" gate="1" x="119.38" y="101.6"/>
@@ -2616,19 +2616,19 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <instance part="GND6" gate="1" x="17.78" y="20.32"/>
 <instance part="P+2" gate="1" x="241.3" y="167.64"/>
 <instance part="P+3" gate="1" x="116.84" y="76.2"/>
-<instance part="P+4" gate="1" x="99.06" y="116.84"/>
-<instance part="GND7" gate="1" x="71.12" y="101.6"/>
-<instance part="P+5" gate="1" x="170.18" y="137.16"/>
+<instance part="P+4" gate="1" x="241.3" y="106.68"/>
+<instance part="GND7" gate="1" x="213.36" y="91.44"/>
+<instance part="P+5" gate="1" x="241.3" y="129.54"/>
 <instance part="C3" gate="G$1" x="101.6" y="15.24"/>
 <instance part="C4" gate="G$1" x="91.44" y="15.24"/>
 <instance part="P+7" gate="1" x="86.36" y="22.86"/>
 <instance part="GND8" gate="1" x="86.36" y="7.62"/>
 <instance part="F1" gate="G$1" x="154.94" y="162.56"/>
-<instance part="U2" gate="G$1" x="213.36" y="160.02"/>
+<instance part="USB_CHARGER" gate="G$1" x="213.36" y="160.02"/>
 <instance part="GND9" gate="1" x="226.06" y="142.24"/>
 <instance part="R10" gate="G$1" x="233.68" y="152.4" rot="R270"/>
 <instance part="GND10" gate="1" x="233.68" y="142.24"/>
-<instance part="U$2" gate="G$1" x="238.76" y="73.66"/>
+<instance part="U$2" gate="G$1" x="142.24" y="111.76"/>
 <instance part="TXLED" gate="G$1" x="66.04" y="60.96"/>
 <instance part="RXLED" gate="G$1" x="73.66" y="60.96"/>
 <instance part="R11" gate="G$1" x="66.04" y="71.12" rot="R90"/>
@@ -2645,7 +2645,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="91.44" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <label x="81.28" y="144.78" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="GND"/>
+<pinref part="µUSB" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="241.3" y1="144.78" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
@@ -2659,21 +2659,21 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="121.92" y1="12.7" x2="119.38" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="12.7" x2="119.38" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="MCU" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="GND@1"/>
+<pinref part="MCU" gate="G$1" pin="GND@1"/>
 <wire x1="121.92" y1="15.24" x2="119.38" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="15.24" x2="119.38" y2="12.7" width="0.1524" layer="91"/>
 <junction x="119.38" y="12.7"/>
-<pinref part="IC1" gate="G$1" pin="GND@2"/>
+<pinref part="MCU" gate="G$1" pin="GND@2"/>
 <wire x1="121.92" y1="17.78" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="17.78" x2="119.38" y2="15.24" width="0.1524" layer="91"/>
 <junction x="119.38" y="15.24"/>
-<pinref part="IC1" gate="G$1" pin="GND@3"/>
+<pinref part="MCU" gate="G$1" pin="GND@3"/>
 <wire x1="121.92" y1="20.32" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="20.32" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 <junction x="119.38" y="17.78"/>
-<pinref part="IC1" gate="G$1" pin="EXP"/>
+<pinref part="MCU" gate="G$1" pin="EXP"/>
 <wire x1="121.92" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="22.86" x2="119.38" y2="20.32" width="0.1524" layer="91"/>
 <junction x="119.38" y="20.32"/>
@@ -2681,17 +2681,17 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="48.26" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="25.4" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="1" pin="GND@2"/>
+<pinref part="USB_SERIAL" gate="1" pin="GND@2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="IC2" gate="1" pin="GND@1"/>
+<pinref part="USB_SERIAL" gate="1" pin="GND@1"/>
 <wire x1="48.26" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="27.94" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
 <junction x="50.8" y="25.4"/>
-<pinref part="IC2" gate="1" pin="GND"/>
+<pinref part="USB_SERIAL" gate="1" pin="GND"/>
 <wire x1="48.26" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="30.48" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 <junction x="50.8" y="27.94"/>
-<pinref part="IC2" gate="1" pin="TEST"/>
+<pinref part="USB_SERIAL" gate="1" pin="TEST"/>
 <wire x1="48.26" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
 <junction x="50.8" y="30.48"/>
@@ -2699,17 +2699,17 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="20.32" y1="33.02" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="33.02" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="1" pin="GND@A"/>
+<pinref part="USB_SERIAL" gate="1" pin="GND@A"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="IC2" gate="1" pin="GND@3"/>
+<pinref part="USB_SERIAL" gate="1" pin="GND@3"/>
 <wire x1="17.78" y1="27.94" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
 <junction x="17.78" y="27.94"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="106.68" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="215.9" y1="96.52" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="96.52" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="RTC" gate="G$1" pin="GND"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -2724,7 +2724,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="223.52" y1="157.48" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="157.48" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VSS"/>
+<pinref part="USB_CHARGER" gate="G$1" pin="VSS"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -2738,8 +2738,8 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="86.36" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
-<label x="220.98" y="86.36" size="1.778" layer="95"/>
+<wire x1="137.16" y1="124.46" x2="124.46" y2="124.46" width="0.1524" layer="91"/>
+<label x="124.46" y="124.46" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PIN5"/>
 </segment>
 <segment>
@@ -2759,13 +2759,13 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <label x="165.1" y="162.56" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <pinref part="F1" gate="G$1" pin="2"/>
-<pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="USB_CHARGER" gate="G$1" pin="VIN"/>
 <pinref part="CHLED" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
 <label x="10.16" y="73.66" size="1.778" layer="95"/>
-<pinref part="IC2" gate="1" pin="VCC"/>
+<pinref part="USB_SERIAL" gate="1" pin="VCC"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2833,7 +2833,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
 <label x="177.8" y="66.04" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT11/OC0A/AIN1)PB3"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT11/OC0A/AIN1)PB3"/>
 </segment>
 </net>
 <net name="YG" class="0">
@@ -2845,7 +2845,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="177.8" y="63.5" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT10/INT2/AIN0)PB2"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT10/INT2/AIN0)PB2"/>
 </segment>
 </net>
 <net name="YF" class="0">
@@ -2857,7 +2857,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
 <label x="177.8" y="60.96" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT9/CLKO/T1)PB1"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT9/CLKO/T1)PB1"/>
 </segment>
 </net>
 <net name="YE" class="0">
@@ -2869,7 +2869,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="58.42" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
 <label x="177.8" y="58.42" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT8/XCK0/T0)PB0"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT8/XCK0/T0)PB0"/>
 </segment>
 </net>
 <net name="YD" class="0">
@@ -2881,7 +2881,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="30.48" x2="182.88" y2="30.48" width="0.1524" layer="91"/>
 <label x="177.8" y="30.48" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT31/OC2A)PD7"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT31/OC2A)PD7"/>
 </segment>
 </net>
 <net name="YC" class="0">
@@ -2893,7 +2893,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="27.94" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 <label x="177.8" y="27.94" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT30/OC2B/ICP)PD6"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT30/OC2B/ICP)PD6"/>
 </segment>
 </net>
 <net name="YB" class="0">
@@ -2905,7 +2905,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="25.4" x2="182.88" y2="25.4" width="0.1524" layer="91"/>
 <label x="177.8" y="25.4" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT29/OC1A)PD5"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT29/OC1A)PD5"/>
 </segment>
 </net>
 <net name="YA" class="0">
@@ -2917,7 +2917,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="22.86" x2="182.88" y2="22.86" width="0.1524" layer="91"/>
 <label x="177.8" y="22.86" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT28/OC1B)PD4"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT28/OC1B)PD4"/>
 </segment>
 </net>
 <net name="XH" class="0">
@@ -2929,7 +2929,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="177.8" y="99.06" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT7/ADC7)PA7"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT7/ADC7)PA7"/>
 </segment>
 </net>
 <net name="XG" class="0">
@@ -2941,7 +2941,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
 <label x="177.8" y="96.52" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT6/ADC6)PA6"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT6/ADC6)PA6"/>
 </segment>
 </net>
 <net name="XF" class="0">
@@ -2953,7 +2953,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
 <label x="177.8" y="93.98" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT5/ADC5)PA5"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT5/ADC5)PA5"/>
 </segment>
 </net>
 <net name="XE" class="0">
@@ -2965,7 +2965,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="177.8" y="91.44" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
 </segment>
 </net>
 <net name="XD" class="0">
@@ -2977,7 +2977,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="88.9" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
 <label x="177.8" y="88.9" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
 </segment>
 </net>
 <net name="XC" class="0">
@@ -2989,7 +2989,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
 <label x="177.8" y="86.36" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT2/ADC2)PA2"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT2/ADC2)PA2"/>
 </segment>
 </net>
 <net name="XB" class="0">
@@ -3001,7 +3001,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
 <label x="177.8" y="83.82" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT1/ADC1)PA1"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT1/ADC1)PA1"/>
 </segment>
 </net>
 <net name="XA" class="0">
@@ -3013,30 +3013,30 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 <label x="177.8" y="81.28" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT0/ADC0)PA0"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT0/ADC0)PA0"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <wire x1="121.92" y1="73.66" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="73.66" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="AREF"/>
+<pinref part="MCU" gate="G$1" pin="AREF"/>
 <pinref part="P+3" gate="1" pin="VCC"/>
-<pinref part="IC1" gate="G$1" pin="AVCC"/>
+<pinref part="MCU" gate="G$1" pin="AVCC"/>
 <wire x1="121.92" y1="71.12" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="71.12" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <junction x="116.84" y="73.66"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="114.3" x2="99.06" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="238.76" y1="104.14" x2="241.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="104.14" x2="241.3" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="RTC" gate="G$1" pin="VCC"/>
 <pinref part="P+4" gate="1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
 <label x="10.16" y="71.12" size="1.778" layer="95"/>
-<pinref part="IC2" gate="1" pin="VCCIO"/>
+<pinref part="USB_SERIAL" gate="1" pin="VCCIO"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
@@ -3048,8 +3048,8 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <pinref part="P+7" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="170.18" y1="137.16" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="129.54" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="VCC"/>
 <pinref part="S1" gate="1" pin="S"/>
 </segment>
@@ -3058,25 +3058,25 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <wire x1="241.3" y1="162.56" x2="241.3" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="167.64" x2="241.3" y2="162.56" width="0.1524" layer="91"/>
 <junction x="241.3" y="162.56"/>
-<pinref part="U2" gate="G$1" pin="VBAT"/>
+<pinref part="USB_CHARGER" gate="G$1" pin="VBAT"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="88.9" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
-<label x="220.98" y="88.9" size="1.778" layer="95"/>
+<wire x1="137.16" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<label x="124.46" y="127" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PIN6"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VCC"/>
+<pinref part="MCU" gate="G$1" pin="VCC"/>
 <pinref part="P+1" gate="1" pin="VCC"/>
 <wire x1="121.92" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="99.06" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VCC@1"/>
+<pinref part="MCU" gate="G$1" pin="VCC@1"/>
 <wire x1="121.92" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="96.52" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <junction x="119.38" y="99.06"/>
-<pinref part="IC1" gate="G$1" pin="VCC@2"/>
+<pinref part="MCU" gate="G$1" pin="VCC@2"/>
 <wire x1="121.92" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="93.98" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 <junction x="119.38" y="96.52"/>
@@ -3099,35 +3099,35 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
 <label x="177.8" y="15.24" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT25/TXD0)PD1"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT25/TXD0)PD1"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <label x="50.8" y="71.12" size="1.778" layer="95"/>
-<pinref part="IC2" gate="1" pin="RXD"/>
+<pinref part="USB_SERIAL" gate="1" pin="RXD"/>
 </segment>
 </net>
 <net name="RXD" class="0">
 <segment>
 <wire x1="175.26" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
 <label x="177.8" y="12.7" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT24/RXD0)PD0"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT24/RXD0)PD0"/>
 </segment>
 <segment>
 <wire x1="48.26" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
 <label x="50.8" y="73.66" size="1.778" layer="95"/>
-<pinref part="IC2" gate="1" pin="TXD"/>
+<pinref part="USB_SERIAL" gate="1" pin="TXD"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <wire x1="175.26" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
 <label x="177.8" y="76.2" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT15/SCK)PB7"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT15/SCK)PB7"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="81.28" x2="220.98" y2="81.28" width="0.1524" layer="91"/>
-<label x="220.98" y="81.28" size="1.778" layer="95"/>
+<wire x1="137.16" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<label x="124.46" y="119.38" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PIN3"/>
 </segment>
 </net>
@@ -3135,11 +3135,11 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 <label x="177.8" y="73.66" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT14/MISO)PB6"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT14/MISO)PB6"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
-<label x="220.98" y="76.2" size="1.778" layer="95"/>
+<wire x1="137.16" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
+<label x="124.46" y="114.3" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PIN1"/>
 </segment>
 </net>
@@ -3147,11 +3147,11 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="175.26" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
 <label x="177.8" y="71.12" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT13/MOSI)PB5"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT13/MOSI)PB5"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
-<label x="220.98" y="78.74" size="1.778" layer="95"/>
+<wire x1="137.16" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
+<label x="124.46" y="116.84" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PIN2"/>
 </segment>
 </net>
@@ -3159,72 +3159,72 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="121.92" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
 <label x="114.3" y="86.36" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="RESET"/>
+<pinref part="MCU" gate="G$1" pin="RESET"/>
 </segment>
 <segment>
-<wire x1="233.68" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
-<label x="220.98" y="83.82" size="1.778" layer="95"/>
+<wire x1="137.16" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<label x="124.46" y="121.92" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PIN4"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="96.52" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<label x="99.06" y="109.22" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
+<wire x1="238.76" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
+<label x="241.3" y="99.06" size="1.778" layer="95"/>
+<pinref part="RTC" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="35.56" x2="182.88" y2="35.56" width="0.1524" layer="91"/>
 <label x="177.8" y="35.56" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT16/SCL)PC0"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT16/SCL)PC0"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="96.52" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
-<label x="99.06" y="106.68" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
+<wire x1="238.76" y1="96.52" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
+<label x="241.3" y="96.52" size="1.778" layer="95"/>
+<pinref part="RTC" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="38.1" x2="182.88" y2="38.1" width="0.1524" layer="91"/>
 <label x="177.8" y="38.1" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT17/SDA)PC1"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT17/SDA)PC1"/>
 </segment>
 </net>
 <net name="SQW" class="0">
 <segment>
-<wire x1="96.52" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
-<label x="99.06" y="111.76" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SQW"/>
+<wire x1="238.76" y1="101.6" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
+<label x="241.3" y="101.6" size="1.778" layer="95"/>
+<pinref part="RTC" gate="G$1" pin="SQW"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
 <label x="177.8" y="50.8" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT22/TOSC1)PC6"/>
 </segment>
 </net>
 <net name="VBATT" class="1">
 <segment>
-<wire x1="160.02" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="129.54" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
-<label x="152.4" y="132.08" size="1.778" layer="95"/>
+<wire x1="231.14" y1="124.46" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="121.92" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<label x="223.52" y="124.46" size="1.778" layer="95"/>
 <pinref part="S1" gate="1" pin="P"/>
 <pinref part="BAT1" gate="G$1" pin="+A"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="73.66" y1="111.76" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="X2"/>
+<wire x1="215.9" y1="101.6" x2="210.82" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="RTC" gate="G$1" pin="X2"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<wire x1="73.66" y1="114.3" x2="71.12" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="114.3" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="X1"/>
+<wire x1="215.9" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="104.14" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="RTC" gate="G$1" pin="X1"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -3232,7 +3232,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="91.44" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
 <label x="81.28" y="154.94" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="VCC"/>
+<pinref part="µUSB" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="162.56" x2="142.24" y2="162.56" width="0.1524" layer="91"/>
@@ -3244,7 +3244,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="223.52" y1="160.02" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="160.02" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="PROG"/>
+<pinref part="USB_CHARGER" gate="G$1" pin="PROG"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -3253,7 +3253,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <wire x1="203.2" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="157.48" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="STAT"/>
+<pinref part="USB_CHARGER" gate="G$1" pin="STAT"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -3269,24 +3269,24 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <wire x1="91.44" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
 <label x="81.28" y="152.4" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="D-"/>
+<pinref part="µUSB" gate="G$1" pin="D-"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
 <label x="10.16" y="38.1" size="1.778" layer="95"/>
-<pinref part="IC2" gate="1" pin="USBDM"/>
+<pinref part="USB_SERIAL" gate="1" pin="USBDM"/>
 </segment>
 </net>
 <net name="USB_P" class="0">
 <segment>
 <wire x1="91.44" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
 <label x="81.28" y="149.86" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="D+"/>
+<pinref part="µUSB" gate="G$1" pin="D+"/>
 </segment>
 <segment>
 <wire x1="20.32" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="10.16" y="40.64" size="1.778" layer="95"/>
-<pinref part="IC2" gate="1" pin="USBDP"/>
+<pinref part="USB_SERIAL" gate="1" pin="USBDP"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3307,7 +3307,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <pinref part="TXLED" gate="G$1" pin="C"/>
 <wire x1="66.04" y1="55.88" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="1" pin="CBUS0"/>
+<pinref part="USB_SERIAL" gate="1" pin="CBUS0"/>
 <wire x1="66.04" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -3316,14 +3316,14 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <segment>
 <pinref part="RXLED" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="55.88" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="1" pin="CBUS1"/>
+<pinref part="USB_SERIAL" gate="1" pin="CBUS1"/>
 <wire x1="73.66" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
 <label x="50.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="IC2" gate="1" pin="CBUS3"/>
+<pinref part="USB_SERIAL" gate="1" pin="CBUS3"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="43.18" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
@@ -3331,7 +3331,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="IC2" gate="1" pin="3V3OUT"/>
+<pinref part="USB_SERIAL" gate="1" pin="3V3OUT"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="45.72" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
