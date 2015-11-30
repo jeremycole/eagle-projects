@@ -1,0 +1,10 @@
+.DS_Store
+*.?\#?
+*.pro
+*.job
+*.ps
+*.GB?
+*.GT?
+*.TXT
+*.dri
+*.gpi
